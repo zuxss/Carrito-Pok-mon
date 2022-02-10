@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/skeleton.css" />
+    <link rel="stylesheet" href="estilos/normalize.css" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <title>Carrito Videojuegos</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header id="header" class="header">
+        <div class="container">
+          <img src="img/pokemon-store.png" id="pokeStore">
+          <!-- Carrito-->
+          <div class="row">
+            <div class="two columns u-pull-right">
+              <ul>
+                <li class="submenu">
+                  <img src="img/cart.png" id="img-carrito" />
+                  <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th>Cantidad</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <h5 id="total" class="u-full-width">No hay Productos</h5>
+                    <a href="#" id="comprar-carrito" class="button u-full-width">Comprar</a>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+        <!-- Buscador y Boton Pokémon-->
+      <div class="barra">
+        <div class="container">
+          <div class="row">
+            <label for="filtrar-juegos"></label>
+           <input type="text" name="filtro" id="filtrar-juegos" placeholder="Buscar Juego">
+            </form>
+            <a href="kanto.html" target="_blank"><input type="button" value="Lista Pokémon Kanto"></a>
+          </div>
+        </div>
+      </div>
+        <!-- Lista de Juegos-->
+      <div id="lista-juegos" class="container">
+        <h1 id="encabezado" class="encabezado">Videojuegos Pokémon</h1>
+        <div class="row">
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego2.jpg" class="imagen-juego u-full-width"/>
+                <h4>Pokémon Rojo</h4>
+                <p>GameBoy</p>
+                <p class="precio">5500</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego3.jpg" class="imagen-juego u-full-width"/>
+                <h4>Pokémon Azul</h4>
+                <p>GameBoy</p>
+                <p class="precio">4000</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card" >
+              <img src="img/juego4.jpg" class="imagen-juego u-full-width" />
+                <h4>Pokémon Amarillo</h4>
+                <p>GameBoy</p>
+                <p class="precio">2500</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego5.jpg" class="imagen-juego u-full-width" />
+                <h4>Pokémon Oro</h4>
+                <p>GameBoy Color</p>
+                <p class="precio">8000</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego7.jpg" class="imagen-juego u-full-width" />
+                <h4>Pokémon Cristal</h4>
+                <p>GameBoy Color</p>
+                <p class="precio">7000</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego6.jpg" class="imagen-juego u-full-width" />
+                <h4>Pokémon Plata</h4>
+                <p>GameBoy Color</p>
+                <p class="precio">6000</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego8.jpg" class="imagen-juego u-full-width" />
+                <h4>Pokémon Esmeralda</h4>
+                <p>GameBoy Advance</p>
+                <p class="precio">8500</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego1.jpg" class="imagen-juego u-full-width" />
+                <h4>Pokémon Verde Hoja</h4>
+                <p>GameBoy Advance</p>
+                <p class="precio">7500</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="four columns">
+            <div class="card">
+              <div class="info-card">
+              <img src="img/juego9.png" class="imagen-juego u-full-width" />
+                <h4>Pokémon Rojo Fuego</h4>
+                <p>GameBoy Advance</p>
+                <p class="precio">9000</p>
+                <a href="#" class="button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="addCard"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/main.js"></script> 
+  </body>
+</html>
